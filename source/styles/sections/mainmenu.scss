@@ -1,0 +1,33 @@
+.main__menu{
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+  background-color: black;
+}
+
+.main__list{
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  padding: 10px;
+  list-style: none;
+
+  &:hover {
+    color: darken(white,30%);
+    transition: 2s;
+    cursor: pointer;
+  }
+
+  &.list--sale{
+    color: red;
+
+    &:hover {
+      color: darken(red,30%);
+      transition: 2s;
+      cursor: pointer;
+    }
+
+  }
+
+}
