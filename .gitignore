@@ -2,7 +2,6 @@
 build
 nodu_modules
 nmp-debug.log
-package-lock.json
 
 ### Node template
 # Logs

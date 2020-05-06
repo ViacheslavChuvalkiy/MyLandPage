@@ -60,6 +60,7 @@
     font-style: $ff-main;
     font-size: 25px;
     word-spacing: 2px;
+    letter-spacing: 2px;
     text-shadow: 1px 1px 1px #66CC99;
   }
 
@@ -73,3 +74,9 @@
   color: #fff;
 }
 
+.instagram-icon{
+  display: inline-block;
+  padding: 2px 2px 1px;
+  border-radius: 3px;
+  color: orangered;
+}

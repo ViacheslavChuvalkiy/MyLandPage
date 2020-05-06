@@ -1,5 +1,7 @@
 .nav {
-  display: inline-block;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
   vertical-align: top;
   float: right;
   padding: 15px;
@@ -7,7 +9,6 @@
 
 
   &__link {
-    display: inline-block;
     vertical-align: top;
     text-align: right;
     padding: 10px;
