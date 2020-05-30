@@ -1,0 +1,64 @@
+.container{
+  display: block;
+}
+
+.sidebar{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 20px 0;
+  width: 13%;
+  height: auto;
+  min-height: 750px;
+  color: white;
+  background-color: #424242;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.sidebar-menu{
+  color: white;
+  padding: 10px;
+  list-style: none;
+
+  &:hover {
+    color: darken(white,30%);
+    transition: 2s;
+    cursor: pointer;
+  }
+
+  .list--choice{
+    margin-left: 10px;
+    margin-right: 2px;
+
+  }
+}
+
+.hero{
+  display: inline-block;
+  position: relative;
+  margin-left: 1%;
+  width: 85%;
+  min-height: 750px;
+  padding: 150px;
+  color: white;
+  background: url("/images/MainFoto.jpg") center/cover no-repeat;
+
+  &:after{
+   @include centerer-x();
+    content: '';
+    bottom: -16px;
+    width: 50px;
+    height: 5px;
+    background: #424242;
+  }
+
+  @media (max-width: 999px) {
+    display: block;
+    width: 95%;
+    padding: 120px;
+    margin: auto;
+  }
+}
