@@ -9,6 +9,10 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 41px 0px 32px;
+
+    @media (max-width: 500px) {
+      padding: 25px 0px 15px;
+    }
   }
 }
 
@@ -16,7 +20,7 @@
   text-align: right;
 }
 
-.contact{
+.contact {
   display: inline-block;
   vertical-align: top;
   padding: 10px 10px 8px;
@@ -24,7 +28,7 @@
   transition: 0.3s;
 
   &:hover {
-    color: lighten(#424242,20%);
+    color: lighten(#424242, 20%);
   }
 
   &:first-child{
@@ -39,8 +43,21 @@
     font-size: 1.5rem;
 
     &--email{
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
+  }
+  &__text{
+
+    display: inline-block;
+
+    @media (max-width: 800px) {
+      display: none;
+
+      &:hover {
+        display:block;
+      }
+    }
+
   }
 }
 
@@ -51,6 +68,12 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+
+    @media (max-width: 500px) {
+      width: 100px;
+      height: 100px;
+    }
+
   }
 
   .logo-name{
@@ -58,10 +81,21 @@
     top: 100px;
     left: 150px;
     font-style: $ff-main;
-    font-size: 25px;
+    font-size: 1.5rem;
     word-spacing: 2px;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px #66CC99;
+
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 1px #66CC99;
+    }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
 }

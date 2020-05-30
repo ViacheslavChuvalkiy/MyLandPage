@@ -1,3 +1,11 @@
-section.hero
+container
+    section.sidebar
+
+        -var items = ['Блузы', 'Рубашки', 'Платья', 'Юбки', 'Брюки', 'Джемперы', 'Свитеры', 'Кардиганы', 'Кофты', 'Пиджаки', 'Костюмы']
+
+        ul.sidebar-menu
+            each item in items
+             li.sidebar-menu.list--choice(href="#")= item
+    section.hero
 
     

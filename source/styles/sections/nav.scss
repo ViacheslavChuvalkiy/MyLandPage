@@ -7,6 +7,10 @@
   padding: 15px;
   margin-right: 10px;
 
+  @media (max-width: 800px) {
+    padding: 0;
+    margin-right: 5px;
+  }
 
   &__link {
     vertical-align: top;
@@ -33,9 +37,21 @@
       background-color: #424242;
     }
 
-    &:last-child:after {
+    @media (max-width: 800px) {
+      &:last-child {
+        display: none;
+
+      &:after {
+        display: none;
+
+        }
+      }
+    }
+
+    &:after {
       display: none;
     }
+
   }
 }
 

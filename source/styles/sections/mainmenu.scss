@@ -11,15 +11,17 @@
 }
 
 .main__list{
+  margin: 5px;
   vertical-align: top;
   color: white;
+  font-size: 20px;
   padding: 10px;
   list-style: none;
+  cursor: pointer;
 
   &:hover {
     color: darken(white,30%);
-    transition: 2s;
-    cursor: pointer;
+    transition: 1s;
   }
 
   &.list--sale{
@@ -27,10 +29,35 @@
 
     &:hover {
       color: darken(red,30%);
-      transition: 2s;
+      transition: 1s;
       cursor: pointer;
     }
 
+  }
+
+  @media (max-width: 800px) {
+    padding: 15px 5px 5px;
+
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
+.list--options{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -12px;
+  padding: 0px;
+  text-align: left;
+  color: white;
+  background-color: black;
+
+  &:hover {
+    color: lighten(white,30%);
+    transition: 1s;
+    cursor: pointer;
   }
 
 }
