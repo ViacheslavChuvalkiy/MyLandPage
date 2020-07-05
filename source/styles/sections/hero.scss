@@ -2,6 +2,11 @@
   display: block;
 }
 
+.container_hero{
+  display: inline-block;
+
+}
+
 .sidebar{
   display: inline-block;
   vertical-align: top;
@@ -9,7 +14,8 @@
   padding: 20px 0;
   width: 13%;
   height: auto;
-  min-height: 750px;
+  min-height: 700px;
+  letter-spacing: 0.1rem;
   color: white;
   background-color: #424242;
 
@@ -41,10 +47,20 @@
   position: relative;
   margin-left: 1%;
   width: 85%;
-  min-height: 750px;
-  padding: 150px;
+  min-height: 700px;
   color: white;
-  background: url("/images/MainFoto.jpg") center/cover no-repeat;
+  padding: 0;
+
+  .hero-img{
+    display: none;
+    width: 100%;
+    max-height: 700px;
+    transition: 5s;
+  }
+
+  &:first-child{
+    display: block;
+  }
 
   &:after{
    @include centerer-x();
