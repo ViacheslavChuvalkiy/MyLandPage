@@ -66,7 +66,7 @@ gulp.task('copy:fonts', function() {
 
 /* ------------ Copy images ------------- */
 gulp.task('copy:images', function() {
-    return gulp.src('./source/images/**/*.*')
+    return gulp.src('./source/images/**/*.*','./source/images/carusel/**/*.*')
         .pipe(gulp.dest('build/images'));
 });
 
@@ -77,7 +77,7 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 /* ------------ js ------------- */
 
 gulp.task('js', function () {
-    return gulp.src(['./source/js/init.js','./source/js/navigation.js','./source/js/main.js'])
+    return gulp.src(['./source/js/init.js','./source/js/navigation.js','./source/js/hero.js','./source/js/main.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
         .pipe(uglify())

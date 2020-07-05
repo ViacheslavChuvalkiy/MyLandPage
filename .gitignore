@@ -668,7 +668,4 @@ node_modules/yallist/
 node_modules/yargs-parser/
 node_modules/yargs/
 package.json
-source/fonts/
-source/images/
-source/js/
-source/styles/
+

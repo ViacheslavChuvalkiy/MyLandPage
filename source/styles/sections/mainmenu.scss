@@ -14,8 +14,10 @@
   margin: 5px;
   vertical-align: top;
   color: white;
+  font: $ff-main-light;
   font-size: 20px;
   padding: 10px;
+  letter-spacing: 0.2rem;
   list-style: none;
   cursor: pointer;
 
@@ -44,20 +46,3 @@
   }
 }
 
-.list--options{
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-  margin-left: -12px;
-  padding: 0px;
-  text-align: left;
-  color: white;
-  background-color: black;
-
-  &:hover {
-    color: lighten(white,30%);
-    transition: 1s;
-    cursor: pointer;
-  }
-
-}
